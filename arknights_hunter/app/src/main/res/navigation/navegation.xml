@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegation"
+    app:startDestination="@id/testFragment">
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.arknighthunter.FilterFragment"
+        android:label="tag_filter_fragment"
+        tools:layout="@layout/tag_filter_fragment" />
+</navigation>

@@ -1,7 +1,9 @@
 package com.example.arknighthunter.data
 
+import com.example.arknighthunter.model.Operator
+
 object DataSource {
-    val tagList = listOf<String>(
+    val tags = listOf<String>(
         "先锋",
         "近卫",
         "狙击",
@@ -31,4 +33,5 @@ object DataSource {
         "费用回复",
         "支援机械"
     )
+    val operators = listOf(Operator("苇草", listOf("先锋", "近战位", "资深干员", "输出", "费用回复")))
 }

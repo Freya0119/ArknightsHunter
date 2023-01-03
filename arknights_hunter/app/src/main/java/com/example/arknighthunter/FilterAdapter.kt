@@ -47,7 +47,7 @@ import com.example.arknighthunter.databinding.TagFilterItemBinding
 //    }
 //}
 
-class FilterAdapter(clickListener: ClickListener) :
+class FilterAdapter :
     Adapter<FilterAdapter.FilterAdapterViewHolder>() {
     class FilterAdapterViewHolder(var binding: TagFilterItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -73,5 +73,3 @@ class FilterAdapter(clickListener: ClickListener) :
         return tags.size
     }
 }
-
-class ClickListener(tag: String)

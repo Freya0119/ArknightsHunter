@@ -14,12 +14,12 @@ class FilterViewModel { //TODO: to be :ViewModel
     private val operatorsDataSource = DataSource.operators
 
     private fun isSameTag(tagString: String): Boolean {
-        if (tags.contains(tagString)) tags.remove(tagString)
+        if (tags.contains(tagString)) tags.remove(tagString)    //註: 如果已經包含該tag，移除
         return (tags.contains(tagString))
     }
 
     fun setTag(tag: String) {
-        if (tags.contains(tag)) {   //TODO: tagList是否包括該string
+        if (tags.contains(tag)) {   //註: tagList是否包括該string
             if (!isSameTag(tag)) {
                 tags.add(tag)
             }

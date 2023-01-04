@@ -1,18 +1,10 @@
-package com.example.arknighthunter
+package com.example.arknighthunter.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
-import android.view.View.inflate
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.arknighthunter.data.DataSource
-import com.example.arknighthunter.databinding.ActivityMainBinding.inflate
 import com.example.arknighthunter.databinding.TagFilterItemBinding
 
 //class FilterAdapter : ListAdapter<String, FilterAdapter.FilterAdapterViewHolder>(DiffCallback) {
@@ -57,7 +49,7 @@ class FilterAdapter :
         }
     }
 
-    private val tags = DataSource.tagList
+    private val tags = DataSource.tags
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilterAdapterViewHolder {
         val inflater = LayoutInflater.from(parent.context)
